@@ -21,6 +21,7 @@ public class Config {
 
     private final Logger log = LoggerFactory.getLogger(Config.class);
 
+
     @Bean
     @ConditionalOnProperty(prefix = "digest", name = "type", havingValue = "md5")
     public Digest md5Digest() {
